@@ -1,3 +1,6 @@
+# Mac folders/files
+.DS_Store
+
 # Ignore installed plugins
 autoload
 plugged
