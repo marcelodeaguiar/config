@@ -1,6 +1,11 @@
 syntax enable
 
-colo delek
+" Invisibles chars
+:set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+:set list
+
+" Enables true colors on terminals
+set termguicolors
 
 " Sets tabs to spaces
 filetype plugin indent on

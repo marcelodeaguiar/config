@@ -17,16 +17,20 @@ call plug#begin('~/config/vim/plugged')
     " Swift syntax
     Plug 'vim-syntastic/syntastic'
     Plug 'keith/swift.vim'
-    
-    Plug 'ap/vim-buftabline' " List buffers as tabs in vim
-    Plug 'airblade/vim-gitgutter' " Adds status column for git status on files (added/modigied/etc)
+
+    " Code Completion
     Plug 'neoclide/coc.nvim' " Adds code completion
 
+    " Status line
+    Plug 'vim-airline/vim-airline'        
+"    Plug 'ap/vim-buftabline' " List buffers as tabs in vim
+"    Plug 'airblade/vim-gitgutter' " Adds status column for git status on files (added/modigied/etc)
+
     " Fuzzy finder
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
+ "   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+ "   Plug 'junegunn/fzf.vim'
 
     " For quick jumps with f or F
-    Plug 'unblevable/quick-scope'
+  "  Plug 'unblevable/quick-scope'
     
 call plug#end()
