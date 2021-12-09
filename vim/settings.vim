@@ -1,8 +1,13 @@
 syntax enable
 
+" Set default copy/paste to system clipboard
+:set clipboard=unnamed
+
+" Set all splits to prefer bottom
+set splitbelow
+
 " Invisibles chars
 :set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
-:set list
 
 " Enables true colors on terminals
 set termguicolors
@@ -20,7 +25,11 @@ set showmatch  " highlight matching [{()}]
 
 " SEARCH
 set incsearch " Search as chars are typed
-set hlsearch  " Highlight search matches
+augroup vimrc-incsearch-highlight " Sets to highlight search when enter/leaving cmd mode.
+  autocmd!
+  autocmd CmdlineEnter /,\? :set hlsearch
+  autocmd CmdlineLeave /,\? :set nohlsearch
+augroup END
 
 " SPELLCHECK
 set spelllang=en_us,pt_br
@@ -38,3 +47,8 @@ set nowrap " disable wraplines
 set wildmenu " show menu for completions
 
 set complete+=kspell
+
+" Set timeout for waiting second key
+set timeoutlen=180
+
+set backspace=indent,eol,start  " more powerful backspacing
