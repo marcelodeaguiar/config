@@ -1,0 +1,16 @@
+tap "homebrew/bundle"
+tap "homebrew/core"
+
+cask "iterm2"
+cask "firefox"
+cask "keepassxc"
+
+brew "rbenv"
+brew "ruby-build"
+brew "ctags"
+brew "gh"
+brew "git-lfs"
+brew "jq"
+brew "loc"
+brew "tmux"
+brew "vim"
