@@ -141,8 +141,15 @@ RPROMPT='${vim_mode}'
 function encrypt() { openssl enc -aes-256-cbc -salt -in "$1" -out "$2" }
 function decrypt() { openssl enc -d -aes-256-cbc -in "$1" -out "$2" }
 
+export PATH="$PATH:$HOME/bin"
+
+# Make x86 brew the default
+export PATH="/usr/local/bin:$PATH"
+
 alias xvim="open -a /Applications/VimXcode13.app"
 alias netskope-off="sudo launchctl unload /Library/LaunchDaemons/com.netskope.client.auxsvc.plist && sudo chmod -x /Applications/Netskope\ Client.app/ && sudo killall Netskope\ Client"
 alias netskope-on="sudo launchctl load /Library/LaunchDaemons/com.netskope.client.auxsvc.plist && sudo chmod +x /Applications/Netskope\ Client.app/ && open -a /Applications/Netskope\ Client.app"
-export PATH="$PATH:$HOME/bin"
+alias xgen="make generate; echo; echo xgen command is deprecated, use \'make generate\'"
+alias gopp="cd ~/workspace/picpay-ios"
+alias xgen="make generate; echo; echo xgen command is deprecated, use \'make generate\'"
 alias xgen="make generate; echo; echo xgen command is deprecated, use \'make generate\'"

@@ -4,6 +4,7 @@ tap "homebrew/core"
 cask "iterm2"
 cask "firefox"
 cask "keepassxc"
+cask "ukelele"
 
 brew "rbenv"
 brew "ruby-build"
