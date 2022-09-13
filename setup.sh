@@ -36,3 +36,4 @@ convertToLink () {
 convertToLink ".vimrc" 
 convertToLink ".zshrc" 
 convertToLink ".xvimrc" 
+convertToLink ".tmux.conf" 

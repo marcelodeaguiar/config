@@ -1,5 +1,7 @@
 syntax enable
 
+set term=xterm-256color
+
 " Set default copy/paste to system clipboard
 :set clipboard=unnamed
 
@@ -52,3 +54,18 @@ set complete+=kspell
 set timeoutlen=180
 
 set backspace=indent,eol,start  " more powerful backspacing
+
+" Prevent vim from requesting to save unchanged things in buffers
+set hidden
+
+" Creates a temp buffer to work on
+function! Scratch()
+    split
+    noswapfile hide enew
+    setlocal buftype=nofile
+    setlocal bufhidden=hide
+    "setlocal nobuflisted
+    "lcd ~
+    file scratch
+endfunction
+command! -bar -nargs=* Btemp call Scratch()

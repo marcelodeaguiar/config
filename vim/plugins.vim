@@ -10,7 +10,9 @@ set rtp+=~/config/vim
 
 " All plugins will be saved to this dir
 call plug#begin('~/config/vim/plugged')
-
+    " Nerdtree file explorer
+    Plug 'preservim/nerdtree'
+    
     "Color scheme
     Plug 'morhetz/gruvbox'
 
@@ -28,6 +30,8 @@ call plug#begin('~/config/vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
 
+    " Load icons for folders/files - Must be the last one.
+    Plug 'ryanoasis/vim-devicons'
  
     " Code Completion
     " Plug 'neoclide/coc.nvim' " Adds code completion
