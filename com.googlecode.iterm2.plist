@@ -658,7 +658,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -693,10 +693,12 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Title Components</key>
+			<integer>512</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -756,14 +758,20 @@
 	</dict>
 	<key>PromptOnQuit</key>
 	<false/>
+	<key>SmartPlacement</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.43199711771844657</real>
+	<key>SwitchTabModifier</key>
+	<integer>9</integer>
+	<key>SwitchWindowModifier</key>
+	<integer>9</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>1</integer>
 	<key>TmuxUsesDedicatedProfile</key>
-	<false/>
+	<true/>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>

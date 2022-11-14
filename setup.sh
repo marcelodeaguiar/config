@@ -1,6 +1,9 @@
 # Stop on failure
 #set -e
 
+# Points kitty config
+launchctl setenv KITTY_CONFIG_DIRECTORY $HOME/.config/kitty/
+
 # Install oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
