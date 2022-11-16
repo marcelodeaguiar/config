@@ -16,12 +16,12 @@ export PATH="/usr/local/bin:$PATH"
 
 # OH-MY-ZSH ===================================
 ZSH_DISABLE_COMPFIX="true"
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 RPROMPT='[%D %*]'
 DISABLE_UPDATE_PROMPT="true"
-
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6c71c4,bg=0"
 plugins=(
-    #   git
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -39,6 +39,11 @@ function decrypt() { openssl enc -d -aes-256-cbc -in "$1" -out "$2" }
 alias netskope-off="sudo launchctl unload /Library/LaunchDaemons/com.netskope.client.auxsvc.plist && sudo chmod -x /Applications/Netskope\ Client.app/ && sudo killall Netskope\ Client"
 alias netskope-on="sudo launchctl load /Library/LaunchDaemons/com.netskope.client.auxsvc.plist && sudo chmod +x /Applications/Netskope\ Client.app/ && open -a /Applications/Netskope\ Client.app"
 
-# Removes prompt ugliness
-prompt_context(){}
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/config/.p10k.zsh ]] || source ~/config/.p10k.zsh
+
+# Startup TMUX
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
 
