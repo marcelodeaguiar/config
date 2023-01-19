@@ -10,8 +10,15 @@ set rtp+=~/config/vim
 
 " All plugins will be saved to this dir
 call plug#begin('~/config/vim/plugged')
+
     " Nerdtree file explorer
     Plug 'preservim/nerdtree'
+
+    " NERDtree Git integration - Must be after NERDtree
+    Plug 'Xuyuanp/nerdtree-git-plugin'    
+
+    " Icon color
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     
     "Color scheme
     Plug 'morhetz/gruvbox'
@@ -34,11 +41,13 @@ call plug#begin('~/config/vim/plugged')
     Plug 'ryanoasis/vim-devicons'
  
     " Code Completion
-    " Plug 'neoclide/coc.nvim' " Adds code completion
+    Plug 'neoclide/coc.nvim', { 'branch': 'release' } " Adds code completion
 
-"    Plug 'ap/vim-buftabline' " List buffers as tabs in vim
-"    Plug 'airblade/vim-gitgutter' " Adds status column for git status on files (added/modigied/etc)
+    " Adds status column for git status on files (added/modigied/etc)
+    Plug 'airblade/vim-gitgutter' 
 
+    " Git helpers
+    Plug 'tpope/vim-fugitive'
 
     " For quick jumps with f or F
   "  Plug 'unblevable/quick-scope'
