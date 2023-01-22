@@ -10,6 +10,11 @@ set rtp+=~/config/vim
 
 " All plugins will be saved to this dir
 call plug#begin('~/config/vim/plugged')
+    " jsonc Syntax highlight
+    Plug 'neoclide/jsonc.vim'
+
+    " Vim/Tmux easy navitation
+    Plug 'christoomey/vim-tmux-navigator'
 
     " Nerdtree file explorer
     Plug 'preservim/nerdtree'

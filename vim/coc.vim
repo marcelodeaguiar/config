@@ -15,6 +15,21 @@ set updatetime=300
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
+" Set config location
+let g:coc_config_home='~/config/vim/'
+
+" Set default extensions
+let g:coc_global_extensions = [
+            \'coc-prettier',
+            \'coc-sourcekit',
+            \'coc-highlight',
+            \'coc-eslint',
+            \'coc-yaml',
+            \'coc-tsserver',
+            \'coc-sh',
+            \'coc-json',
+            \'coc-solargraph']
+
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s).
