@@ -780,6 +780,10 @@
 	<integer>1</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Captured Output</string>
+	</array>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>

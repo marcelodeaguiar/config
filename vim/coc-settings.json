@@ -1,3 +1,7 @@
 {
+    "codeLens.enable": true,
+    "solargraph.useBundler": false,
+    "solargraph.formatting": true,
+    "solargraph.diagnostics": true,
     "diagnostic.checkCurrentLine": true
 }

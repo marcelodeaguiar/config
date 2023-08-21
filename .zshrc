@@ -14,6 +14,14 @@ export PATH=$PATH:$HOME/bin
 # Make x86 brew the default
 export PATH="/usr/local/bin:$PATH"
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+
+# Java (make it first in path to skip MacOS default version)
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
 # OH-MY-ZSH ===================================
 ZSH_DISABLE_COMPFIX="true"
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -38,17 +46,26 @@ function decrypt() { openssl enc -d -aes-256-cbc -in "$1" -out "$2" }
 
 alias netskope-off="sudo launchctl unload /Library/LaunchDaemons/com.netskope.client.auxsvc.plist && sudo chmod -x /Applications/Netskope\ Client.app/ && sudo killall Netskope\ Client"
 alias netskope-on="sudo launchctl load /Library/LaunchDaemons/com.netskope.client.auxsvc.plist && sudo chmod +x /Applications/Netskope\ Client.app/ && open -a /Applications/Netskope\ Client.app"
+alias v="vim"
+alias k="kubectl"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/config/.p10k.zsh ]] || source ~/config/.p10k.zsh
 
 # Startup TMUX
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  echo "Here"
   exec tmux new-session -A -s main
 fi
 
-export PATH="$PATH:$HOME/bin"
-
-export NVM_DIR="$HOME/.nvm"
+# NVM setup
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# PyEnv setup
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Setup Bazel
+export PATH="$PATH:$HOME/bin"

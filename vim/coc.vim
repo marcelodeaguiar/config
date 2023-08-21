@@ -19,6 +19,7 @@ set shortmess+=c
 let g:coc_config_home='~/config/vim/'
 
 " Set default extensions
+"            \'coc-go',
 let g:coc_global_extensions = [
             \'coc-prettier',
             \'coc-sourcekit',
@@ -28,6 +29,7 @@ let g:coc_global_extensions = [
             \'coc-tsserver',
             \'coc-sh',
             \'coc-json',
+            \'coc-kotlin',
             \'coc-solargraph']
 
 augroup mygroup

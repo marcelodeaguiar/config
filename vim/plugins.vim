@@ -54,6 +54,9 @@ call plug#begin('~/config/vim/plugged')
     " Git helpers
     Plug 'tpope/vim-fugitive'
 
+    " Git helpers
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
     " For quick jumps with f or F
   "  Plug 'unblevable/quick-scope'
 
