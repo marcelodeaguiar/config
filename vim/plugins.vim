@@ -29,8 +29,8 @@ call plug#begin('~/config/vim/plugged')
     Plug 'morhetz/gruvbox'
 
     " Swift syntax
-    Plug 'vim-syntastic/syntastic'
-    Plug 'keith/swift.vim'
+    "Plug 'vim-syntastic/syntastic'
+    "Plug 'keith/swift.vim'
 
     " Fastlane syntax
     Plug 'https://github.com/milch/vim-fastlane'
@@ -56,6 +56,9 @@ call plug#begin('~/config/vim/plugged')
 
     " Git helpers
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+    " Python code formatter
+    Plug 'psf/black', { 'branch': 'stable' }
 
     " For quick jumps with f or F
   "  Plug 'unblevable/quick-scope'

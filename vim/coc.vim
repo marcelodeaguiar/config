@@ -21,6 +21,7 @@ let g:coc_config_home='~/config/vim/'
 " Set default extensions
 "            \'coc-go',
 let g:coc_global_extensions = [
+            \'coc-pyright',
             \'coc-prettier',
             \'coc-sourcekit',
             \'coc-highlight',
@@ -30,7 +31,8 @@ let g:coc_global_extensions = [
             \'coc-sh',
             \'coc-json',
             \'coc-kotlin',
-            \'coc-solargraph']
+            \'coc-solargraph',
+            \'coc-sourcekit']
 
 augroup mygroup
   autocmd!

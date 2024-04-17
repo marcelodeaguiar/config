@@ -3,5 +3,8 @@
     "solargraph.useBundler": false,
     "solargraph.formatting": true,
     "solargraph.diagnostics": true,
-    "diagnostic.checkCurrentLine": true
+    "diagnostic.checkCurrentLine": true,
+    "sourcekit.commandPath": "/usr/bin/sourcekit-lsp",
+    "sourcekit.filetypes": ["swift"],
+    "python.formatting.blackPath": "/usr/local/bin/black",
 }
