@@ -652,7 +652,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>HackNerdFontCompleteM-Regular 13</string>
+			<string>HackNFM-Regular 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -890,12 +890,14 @@
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>1</integer>
 	<key>TmuxUsesDedicatedProfile</key>
-	<true/>
+	<false/>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Captured Output</string>
 	</array>
 	<key>UseBorder</key>
+	<false/>
+	<key>UseTmuxStatusBar</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>

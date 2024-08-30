@@ -33,8 +33,8 @@ RPROMPT='[%D %*]'
 DISABLE_UPDATE_PROMPT="true"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6c71c4,bg=0"
 plugins=(
-    zsh-autosuggestions
-    zsh-ask
+#    zsh-autosuggestions
+#    zsh-ask
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -42,9 +42,6 @@ call plug#begin('~/config/vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
 
-    " Load icons for folders/files - Must be the last one.
-    Plug 'ryanoasis/vim-devicons'
- 
     " Code Completion
     Plug 'neoclide/coc.nvim', { 'branch': 'release' } " Adds code completion
 
@@ -54,11 +51,14 @@ call plug#begin('~/config/vim/plugged')
     " Git helpers
     Plug 'tpope/vim-fugitive'
 
-    " Git helpers
+    " Go slp
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
     " Python code formatter
     Plug 'psf/black', { 'branch': 'stable' }
+    
+    " Load icons for folders/files - Must be the last one.
+    Plug 'ryanoasis/vim-devicons'
 
     " For quick jumps with f or F
   "  Plug 'unblevable/quick-scope'
