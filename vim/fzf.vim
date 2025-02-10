@@ -1,7 +1,7 @@
 " This is the default extra key bindings
 " Pressing this inside search window opens the new file in the target
 let g:fzf_action = {
-  \ 'ctrl-x': 'split',
+  \ 'ctrl-h': 'split',
   \ 'ctrl-v': 'vsplit' }
 
 " Enable per-command history.
