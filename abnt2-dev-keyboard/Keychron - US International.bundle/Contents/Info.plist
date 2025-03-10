@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.brazilian-abnt2devkeyboard</string>
+	<string>org.sil.ukelele.keyboardlayout.keychron-usinternational</string>
 	<key>CFBundleName</key>
-	<string>Brazilian - ABNT2 Dev keyboard</string>
+	<string>Keychron - US International</string>
 	<key>CFBundleVersion</key>
 	<string></string>
-	<key>KLInfo_Brazilian - ABNT2 for devs</key>
+	<key>KLInfo_Keychron - U.S. International</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<false/>
 		<key>TISIconIsTemplate</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.brazilian-abnt2devkeyboard.brazilian-abnt2fordevs</string>
+		<string>org.sil.ukelele.keyboardlayout.keychron-usinternational.keychron-u.s.international</string>
 		<key>TISIntendedLanguage</key>
-		<string>pt</string>
+		<string>en</string>
 	</dict>
 </dict>
 </plist>

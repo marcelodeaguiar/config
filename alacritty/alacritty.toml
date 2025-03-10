@@ -1,0 +1,24 @@
+[general]
+
+working_directory = "/Users/marcelodeaguiar/workspace/"
+live_config_reload = true
+
+[window]
+opacity = 0.8
+blur = true
+
+[font]
+normal = { family = "Hack Nerd Font Mono", style = "Regular" }
+bold = { family = "Hack Nerd Font Mono", style = "Bold" }
+italic = { family = "Hack Nerd Font Mono", style = "Italic" }
+size = 14
+
+[selection]
+save_to_clipboard = true
+
+#[cursor]
+#style = { blinking = "Always" }
+#unfocused_hollow = true
+
+[mouse]
+hide_when_typing = true
